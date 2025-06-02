@@ -9,7 +9,7 @@ def get_weather() -> None:
 
     its_necessary_data = {
         "Country": data["location"]["country"],
-        "Time&Data": data["location"]["localtime"],
+        "Time&Date": data["location"]["localtime"],
         "Temperature": data["current"]["temp_c"],
     }
     with open("weather.json", "w", encoding="utf-8") as f:
